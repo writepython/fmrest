@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+.mypy_cache
+.cache/
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+*.swo
+scratch/
+.ipynb_checkpoints/
+build/
+dist/
+examples/*.jpg
+tags
+*.pem

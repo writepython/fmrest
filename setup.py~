@@ -1,0 +1,31 @@
+from __future__ import with_statement
+from __future__ import absolute_import
+from setuptools import setup
+from io import open
+
+with open(u'README.md', u'r', encoding=u'utf-8') as ld:
+    long_description = ld.read()
+
+setup(
+    name=u'python-fmrest',
+    version=u'1.4.0',
+    python_requires=u'>=3.6',
+    author=u'David Hamann',
+    author_email=u'dh@davidhamann.de',
+    description=u'python-fmrest is a wrapper around the FileMaker Data API.',
+    long_description=long_description,
+    long_description_content_type=u'text/markdown',
+    url=u'https://github.com/davidhamann/python-fmrest',
+    packages=[u'fmrest'],
+    include_package_data=True,
+    install_requires=[u'requests>=2'],
+    extras_require={
+        u'cloud': [u'pycognito>=0.1.4']
+    },
+    classifiers=(
+        u'Programming Language :: Python',
+        u'Programming Language :: Python :: 3.6',
+        u'License :: OSI Approved :: MIT License',
+        u'Operating System :: OS Independent'
+    )
+)
