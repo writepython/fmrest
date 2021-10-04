@@ -1,7 +1,6 @@
 u"""Record class for FileMaker record responses"""
 
 from __future__ import absolute_import
-from typing import List, Dict, Any, Optional
 from .utils import convert_string_type
 from .const import PORTAL_PREFIX
 from itertools import izip
@@ -36,7 +35,6 @@ class Record(object):
 
         self._keys = keys
 
-        self._values: List[Any]
         if type_conversion:
             self._values = []
             for value in values:
@@ -46,7 +44,7 @@ class Record(object):
             self._values = values
 
         self._in_portal = in_portal
-        self._modifications: Dict[unicode, Any] = {}
+        self._modifications = {}
 
         if len(self._keys) != len(self._values):
             raise ValueError(u"Length of keys does not match length of values.")

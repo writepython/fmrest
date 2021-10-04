@@ -4,8 +4,6 @@ import os
 from enum import Enum, unique
 from pkg_resources import get_distribution
 
-__version__ = get_distribution(u'python-fmrest').version
-
 PORTAL_PREFIX = u'portal_'
 TIMEOUT = int(os.environ.get(u'fmrest_timeout', 10))
 

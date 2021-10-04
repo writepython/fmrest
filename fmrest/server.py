@@ -2,8 +2,7 @@ u"""Server class for API connections"""
 from __future__ import absolute_import
 import json
 import warnings
-from typing import (List, Dict, Optional, Any, IO, Tuple, Union, Iterator,
-                    Callable)
+
 from functools import wraps
 import requests
 from .utils import request, build_portal_params, build_script_params, filename_from_url

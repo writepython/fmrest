@@ -1,5 +1,4 @@
 from __future__ import absolute_import
-from typing import Optional, Any
 import requests
 
 class FMRestException(Exception):

@@ -2,7 +2,6 @@ u"""Foundset class for collections of Records"""
 
 from __future__ import absolute_import
 import itertools
-from typing import Iterator, List, Any, Dict
 from .utils import cache_generator
 from .record import Record
 
@@ -31,7 +30,7 @@ class Foundset(object):
 
         # We hold the list of cached values and the state of completion in a list
         # idea: https://codereview.stackexchange.com/a/178780/151724
-        self._cache: List[Any] = [[], False]
+        self._cache = [[], False]
 
         # cache_generator will yield the values and handle the caching
         self._iter = cache_generator(self._records, self._cache)

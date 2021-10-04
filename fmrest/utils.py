@@ -1,6 +1,5 @@
 u"""Utility functions for fmrest"""
 from __future__ import absolute_import
-from typing import List, Dict, Any, Iterator
 import requests
 from .exceptions import RequestException
 from .const import TIMEOUT
@@ -44,8 +43,6 @@ def build_portal_params(portals, names_as_string = False):
         a string. Use this to get something like '["Portal1", "Portal2"]'.
         If False, portals key will have a value of type list, like ["Portal1", "Portal2"]
     """
-
-    params: Dict[unicode, Any]
 
     portal_selector = [portal[u'name'] for portal in portals]
     if names_as_string:
