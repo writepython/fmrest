@@ -7,7 +7,7 @@ with open(u'README.md', u'r', encoding=u'utf-8') as ld:
     long_description = ld.read()
 
 setup(
-    name=u'python2-fmrest',
+    name=u'fmrest',
     version=u'1.0.0',
     python_requires=u'>=2.7',
     description=u'python2-fmrest is Python 2 port of the FileMaker Data API wrapper by David Hamann.',

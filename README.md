@@ -1,6 +1,6 @@
-# python2-fmrest
+# fmrest
 
-python2-fmrest is a wrapper around the FileMaker Data API.
+fmrest is a Python 2 wrapper around the FileMaker Data API.
 
 No need to worry about manually requesting access tokens, setting the right http headers, parsing responses, ...
 
